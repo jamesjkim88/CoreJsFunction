@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var variable = "global";
+        function print(){
+            var variable = "local";
+            return variable;
+        };
+
+        console.log(print()); //prints "local"
+        console.log(print.toString());
+
+        function add(x){
+            return function(y){
+                return x+y;
+            };
+        };
+
+        var add5 = add(5); //same as add(5)
+        console.log(add5(2)); //same as function(y) and will return 5+2
+    </script>
+</head>
+<body>
+
+</body>
+</html>

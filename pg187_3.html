@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var guitar = {
+            model: "fender",
+            make: "stratocaster",
+            origin: "America"
+        }
+
+        function bindThis(){
+            console.log(this === guitar); // prints true
+
+        }
+
+        var print = bindThis.bind(guitar);
+        print();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

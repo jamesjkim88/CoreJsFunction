@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Car(){
+            // if the context is inherited from Car | this instanceof Car
+            // else invoke Car as a constructor
+
+            if(!(this instanceof Car)) {
+                return new Car();
+            }
+        };
+        var y = Car();
+        var c = new Car();
+
+        console.log(y);
+        console.log(c);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

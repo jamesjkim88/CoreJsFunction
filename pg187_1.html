@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var dog = {
+            name: "rocky"
+        };
+
+        function returnThis(str){
+            console.log(this === dog); //prints true
+            return this.name + str;
+        };
+
+
+        console.log(returnThis.call(dog, " is a happy dog")); //prints rocky is a happy dog
+        console.log(returnThis.apply(dog, [" is a happy dog"])) //prints the same as the call method
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

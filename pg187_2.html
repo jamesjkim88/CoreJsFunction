@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function add(x,y,z){
+            return x+y+z;
+        };
+
+        var newSum = add.bind(null, 50,10);
+        newSum(30);
+        console.log(newSum(30)); //prints 90;
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

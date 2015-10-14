@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Method Invocation
+         */
+
+        var hero = {
+            health: 100,
+            mana: 100,
+            exp: 0,
+            magicDmg: function(){
+                this.mana--;
+                this.exp_++
+            },
+            gotHit: function(){
+                this.health--;
+                this.exp++;
+            }
+        };
+
+        hero.magicDmg();
+        hero.gotHit();
+        hero.gotHit();
+        hero.magicDmg();
+        hero.gotHit();
+        hero.magicDmg();
+        console.log(hero.mana);
+        console.log(hero.health);
+        console.log(hero.exp);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

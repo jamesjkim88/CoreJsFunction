@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function doThis(x){
+            var arr = Array.prototype.slice.call(arguments);
+            console.log(arr[0]);
+            return x.apply(null, arr.slice(1));
+        }
+
+        function add(x,y){
+            return x+y;
+        }
+
+        console.log(doThis(add,2,3));
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Functions for object properties
+         */
+
+        var dog = {
+            name: "Rocky",
+            bark: function(){
+                return this.name + " is barking at the cat";
+            },
+            fetch: function(){
+                return this.name + " caught the ball"
+            }
+        };
+
+        console.log(dog.bark());
+        console.log(dog.fetch());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

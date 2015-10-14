@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /*
+        Function constructor
+         */
+
+        var scope = "global";
+        function func(){
+            var scope = "local";
+            return new Function("return scope");
+        };
+
+        func()(); // second pair of () to invoke the new Function constructor
+        console.log(func()()); //prints global because new Function constructor well act as top-level function and will not read "local"
+    </script>
+</head>
+<body>
+
+</body>
+</html>

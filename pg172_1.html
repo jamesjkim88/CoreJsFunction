@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function test(x,y,z,a){
+            console.log(arguments); //will print [1,2,3,10]
+            console.log(arguments.length); //will print 4
+            console.log(arguments[5]); //will print undefined
+            console.log(arguments[2]); //will print 3
+        }
+
+        test(1,2,3,10);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
